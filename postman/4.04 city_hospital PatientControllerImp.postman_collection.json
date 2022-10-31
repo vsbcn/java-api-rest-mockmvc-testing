@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "17d18836-144e-48c0-9072-78e028243cd1",
+		"name": "4.04 city_hospital PatientControllerImp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23020209"
+	},
+	"item": [
+		{
+			"name": "@/patient-add-new",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patient_id\": 12,\r\n    \"name\": \"James Brown\",\r\n    \"dateOfBirth\": \"1931-05-11\",\r\n    \"employee\": {\"employeeId\": 564134}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/patient-add-new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"patient-add-new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "@/patient-update/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patient_id\": 207,\r\n    \"name\": \"James Bro\",\r\n    \"dateOfBirth\": \"1931-05-11\",\r\n    \"employee\": {\"employeeId\": 35673113}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/patient-update/78",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"patient-update",
+						"78"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

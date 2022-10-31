@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "91247853-88d3-473f-92ad-80a7e506d046",
+		"name": "4.04 city_hospital EmployeeControllerImp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23020209"
+	},
+	"item": [
+		{
+			"name": "@/doctor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeId\": 17845112,\r\n    \"department\": \"new dep\",\r\n    \"name\": \"Marta Rodriguez\",\r\n    \"status\": \"ON_CALL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/doctor-add-new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"doctor-add-new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "@/doctor-status{id}",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"status\": \"ON\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/doctor-status/156545",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"doctor-status",
+						"156545"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "@/doctor-department/{id}",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"department\": \"Well being\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/doctor-department/156545",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"doctor-department",
+						"156545"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

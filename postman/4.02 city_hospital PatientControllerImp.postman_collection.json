@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "1928893a-ecb7-4715-a335-4738017009d8",
+		"name": "4.02 city_hospital PatientControllerImp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23020209"
+	},
+	"item": [
+		{
+			"name": "Patient - findPatientByPatientId - /patient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/patient?id=22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"patient"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "22"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patient - findPatientByPatientIdPV - /patient/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/patient/72",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"patient",
+						"72"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patient - findPatientsByBirth - /patients-by-dob",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/patients-by-dob?min=1931-01-01&max=1999-01-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"patients-by-dob"
+					],
+					"query": [
+						{
+							"key": "min",
+							"value": "1931-01-01"
+						},
+						{
+							"key": "max",
+							"value": "1999-01-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patient - findPatientsByAdmittingDoctorDepartment - /patients-by-doctor-department",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/patients-by-doctor-department?department=pulmonary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"patients-by-doctor-department"
+					],
+					"query": [
+						{
+							"key": "department",
+							"value": "pulmonary"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patient - findPatientsByAdmittingDoctorStatus - /patients-by-doctor-status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/patients-by-doctor-status?status=OFF",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"patients-by-doctor-status"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "OFF"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
